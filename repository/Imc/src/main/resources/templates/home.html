@@ -1,0 +1,54 @@
+<!doctype html>
+<html xmlns:th="http://www.thymeleaf.org"
+	xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"/>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+
+<title>Home</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">IMC</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a class="nav-link" href="#">logout</a></li>
+
+			</ul>
+		</div>
+	</nav>
+	<div class="container">
+		<h1 style="color: #1bb0ce">CALCULAR IMC</h1>
+	</div>
+	
+	<br/>
+				<div>
+				<h2>Bienvenido</h2>
+				
+				<span th:text="${user.username}">MostrarNombre</span>
+				</div>
+				
+				
+	<br/>
+	<br/>
+	<div>
+	<a th:href="@{/agregar}" style="justify-content:center; display: flex;">Calcular IMC</a>
+	</div>
+	<br/>
+			
+Nombre:<span th:text="${user.}">MostrarNombre</span>
+		
+</body>
+</html>

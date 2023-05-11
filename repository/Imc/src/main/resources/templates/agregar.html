@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="UTF-8">
+<title>Introducir IMC</title>
+</head>
+<body>
+<h1>IMC </h1>
+<a th:href="@{/home}"> Regresar </a>
+
+<form th:action="@/guardar" mehtod="post" th:object="${user}">
+
+	<label for="imc">IMC:</label>
+	<input type="text" name="nombre" th:field="*{imc}"/>
+
+</form>
+</body>
+</html>
